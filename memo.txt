@@ -21,4 +21,19 @@
 
 슬라이더 swiper 쓰거나 slick 쓰기
 
-캘린더 json 참고 https://sallykim5087.tistory.com/183
+
+상설 행사 알림 페이지 하나 더 만들기!!!!!!!!!!
+창경궁, 덕수궁은 언제나 야간개방(월 휴궁)
+https://twitter.com/chlove_u/status/1509761264213721094
+경복궁 칠궁 특별관람은 상설 행사. 현장 접수
+https://www.royalpalace.go.kr/content/board/view.asp?seq=822&page=&c1=0&c2=%C4%A5%B1%C3
+https://www.royalpalace.go.kr/content/guide/guide32.asp
+덕수궁 석조전 대한제국역사관 관람은 상설 행사. 예약제
+http://www.deoksugung.go.kr/c/schedule/info/SB
+창덕궁 후원관람 상설 행사. 예약제
+https://ticket.uforus.co.kr/web/main?shopEncode=#none
+
+COMING SOON
+경복궁 생과방
+창덕궁 달빛기행
+창덕궁 동궐도 나무 답사

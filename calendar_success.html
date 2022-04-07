@@ -5,7 +5,7 @@
   <meta charset='utf-8' />
   <link href='./library/fullcalendar-5.10.2/lib/main.css' rel='stylesheet' />
   <link rel="stylesheet" href="./library/fullcalendar-5.10.2/lib/locales-all.js">
-  <script src="./javascript/jquery-3.6.0.min.js"></script>
+
   <script src='./library/fullcalendar-5.10.2/lib/main.js'></script>
   <script>
       document.addEventListener('DOMContentLoaded', function () {
@@ -29,7 +29,7 @@
           right: 'dayGridMonth,listWeek' //행사목록 월별로 바꾸려면 listMonth로 고치면 됨
         },
         locale: 'ko', // 한국어 설정
-        events: '/events.json'
+        events: './json/events.json'
       });
 
       calendar.render();
