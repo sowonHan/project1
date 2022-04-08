@@ -9,12 +9,11 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./library/fullcalendar-5.10.2/lib/main.min.css">
-
-    <script src="./library/fullcalendar-5.10.2/lib/main.min.js"></script>
-    <script src="./library/fullcalendar-5.10.2/lib/locales-all.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
     <title>고궁 산책</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -29,16 +28,51 @@
         </nav>
     </header>
 
-    <section></section>
-    <section></section>
-    <section></section>
+    <div class="wrap">
+        <section class="slider">
+            <div class="slider__container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <section class="calendar">
+            <div class="calender__container">
+                <div id='calendar'></div>
+            </div>
+        </section>
+        <section class="notice">
+            <div class="notice__container">
+                <div class="notice__content">
+                    <h3>
+                        <i class="fa-solid fa-chevron-left"></i>
+                        예정 행사
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </h3>
+                </div>
+            </div>
+        </section>
+    </div>
+
 
     <footer>
         <div>ⓒ 2022. Cultural Heritage Administration Royal Palaces and Tombs Center. All Rights reserved.</div>
         <div>ⓒ 2022. 고궁산책 Built with</div>
         <div>
-            <a href="https://github.com/sowonHan/walking_palace" target="_blank"><img src="./images/GitHub-Mark-32px.png" alt="GitHub 로고"></a>
+            <a href="https://github.com/sowonHan/walking_palace" target="_blank">
+                <img src="./images/GitHub-Mark-32px.png" alt="GitHub 로고"></a>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./library/fullcalendar-5.10.2/lib/main.min.js"></script>
+    <script src="./library/fullcalendar-5.10.2/lib/locales-all.min.js"></script>
 </body>
 </html>
