@@ -1,2 +1,11 @@
 @charset "UTF-8";
 
+header {
+    width: 100%;
+    height: 65px;
+    background-color: #acecd7;
+}
+
+.menu {
+    display: flex;
+}

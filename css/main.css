@@ -1,1 +1,103 @@
 @charset "UTF-8";
+
+/* 슬라이드 */
+
+.slider__container {
+    width: 100%;
+    height: 600px;
+    background-color: pink;
+    /* 나중에 백그라운드로 이미지 넣기 */
+}
+
+.slider__content {
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 최대너비 있는 콘텐츠 */
+
+.wrap__maxwidth {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* 달력 */
+
+.calendar__container {
+    height: 740px;
+    /* 달력 크기는 900 x 736.14 */
+    padding: 80px 0 40px 0;
+}
+
+/* 알림판 */
+
+.notice__container {
+    height: 250px;
+    background-color: antiquewhite;
+    border: 10px solid #BD1137;
+    box-sizing: border-box;
+}
+
+/* 상설 행사 안내 */
+
+.all-time__container {
+    height: 300px;
+    background-color: #c27ac2;
+}
+
+/* 미디어 쿼리 */
+
+/* 0 ~ 767px */
+@media all and (max-width: 767px) {
+    .swiper-button-next {
+        right: 20px;
+        transform: rotate(90deg);
+    }
+
+    .swiper-button-prev {
+        left: 20px;
+        transform: rotate(90deg);
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+}
