@@ -44,7 +44,6 @@ document.addEventListener('DOMContentLoaded', function () {
             list: '행사 목록'
         },
         fixedWeekCount: false, // true는 6주 고정
-        initialDate: '2022-04-01',
         businessHours: true, // 주말에 회색 배경 생김
         dayMaxEvents: true, // allow "more" link when too many events,
         expandRows: true,
@@ -56,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         locale: 'ko', // 한국어 설정
         events: './json/events.json',
+        // live server로는 잘 되는데 chrome 브라우저로 여니까 안 돼^.T...
         
         // 이벤트 클릭했을 때 새 탭에서 열리게 하는 기능
         eventClick: function (info) {
@@ -68,4 +68,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     calendar.render();
+    // calendar.changeView(getView());
 });
+
+// swiper 코드 참고해서 반응형으로 너비에 따라 달력 뷰를 바꿔주려고 했는데, 너비 줄인 상태에서 새로고침을 해야만 뷰가 바뀐다...자동으로 바뀔 수 없을까? 근데 급한 거 아니니까 나중에 여쭤보기로
+// let getView = () => {
+//     var intFrameWidth = window.innerWidth;
+
+//     const view = intFrameWidth <= 329 ? 'listWeek' : 'dayGridMonth';
+
+//     return view;
+// }

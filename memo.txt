@@ -18,8 +18,6 @@
 
 메뉴랑 슬라이더 한국의 집 https://www.chf.or.kr/kh 참고
 
-슬라이더 swiper 쓰거나 slick 쓰기
-
 
 상설 행사 알림 페이지 하나 더 만들기!!!!!!!!!!
 창경궁, 덕수궁은 언제나 야간개방(월 휴궁)
@@ -33,6 +31,5 @@ http://www.deoksugung.go.kr/c/schedule/info/SB
 https://ticket.uforus.co.kr/web/main?shopEncode=#none
 
 COMING SOON
-경복궁 생과방
 창덕궁 달빛기행
 창덕궁 동궐도 나무 답사

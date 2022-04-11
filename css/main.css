@@ -10,7 +10,7 @@
 }
 
 .slider__content {
-    width: 1200px;
+    max-width: 1200px;
     height: 600px;
     margin: 0 auto;
 }
@@ -71,22 +71,95 @@
 
 .notice__container {
     height: 250px;
-    background-color: antiquewhite;
     border: 10px solid #BD1137;
     box-sizing: border-box;
+}
+
+.notice__content {
+    box-sizing: border-box;
+    border: 10px solid #7CA051;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.comming-soon {
+    text-align: center;
+}
+
+.comming-soon > h1 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: 'Noto Serif KR', serif;
+}
+
+.comming-soon > p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Noto Serif KR', serif;
+}
+
+.comming-soon > p:first-of-type {
+    margin-bottom: 15px;
+}
+
+.comming-soon > p:last-of-type {
+    margin-bottom: 5px;
 }
 
 /* 상설 행사 안내 */
 
 .all-time__container {
     height: 300px;
-    background-color: #c27ac2;
+    background-color: bisque;
+    margin-top: 20px;
 }
+
+.all-time__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.all-time__content > p:first-of-type {
+    align-self: flex-start;
+    font-family: 'Gowun Batang', serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin: 30px 0 30px 20px;
+}
+
+.all-time__content > p:last-of-type {
+    align-self: flex-end;
+    font-family: 'Gowun Batang', serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin: 0 20px 30px 0;
+}
+
+.all-time__content > h1 {
+    font-size: 1.3rem;
+}
+
 
 /* 미디어 쿼리 */
 
-/* 0 ~ 767px */
+@media all and (max-width: 329px) {
+    /* 달력 */
+    .fc-header-toolbar > .fc-toolbar-chunk:first-of-type > button {
+        display: none;
+    }
+
+    /* .fc-header-toolbar > .fc-toolbar-chunk:last-of-type > .fc-button-group > button:first-child {
+        display: none;
+        달력 버튼 안 보이게 하는 설정
+    } */
+}
+
 @media all and (max-width: 767px) {
+    /* 슬라이드 */
     .swiper-button-next {
         right: 20px;
         transform: rotate(90deg);
@@ -98,6 +171,24 @@
     }
 
     .swiper-pagination {
+        display: none;
+    }
+
+    /* 달력 */
+    .fc-toolbar.fc-header-toolbar {
+        font-size: 60%;
+    }
+
+    .fc-daygrid-day-top, .fc-event-title {
+        font-size: 60%;
+    }
+
+    
+}
+
+@media all and (max-width: 889px) {
+    /* 달력 배경이벤트 텍스트 */
+    .fc-bg-event .fc-event-title {
         display: none;
     }
 }
