@@ -101,20 +101,15 @@
     font-family: 'Noto Serif KR', serif;
 }
 
-.comming-soon > p:first-of-type {
-    margin-bottom: 15px;
-}
-
-.comming-soon > p:last-of-type {
+.comming-soon > p {
     margin-bottom: 5px;
 }
 
 /* 상설 행사 안내 */
 
 .all-time__container {
-    height: 300px;
-    background-color: bisque;
-    margin-top: 20px;
+    /* height: 300px; */
+    margin-top: 60px;
 }
 
 .all-time__content {
@@ -139,16 +134,24 @@
     margin: 0 20px 30px 0;
 }
 
-.all-time__content > h1 {
-    font-size: 1.3rem;
+.all-time__content > h6 {
+    font-weight: 400;
+    margin: 15px 0 30px 0;
 }
 
+/* 상설행사 버튼 */
+
+.all-time__btn {
+    background-color: #7CA051;
+    margin-bottom: 70px;
+}
 
 /* 미디어 쿼리 */
 
 @media all and (max-width: 329px) {
+
     /* 달력 */
-    .fc-header-toolbar > .fc-toolbar-chunk:first-of-type > button {
+    .fc-header-toolbar>.fc-toolbar-chunk:first-of-type>button {
         display: none;
     }
 
@@ -159,6 +162,7 @@
 }
 
 @media all and (max-width: 767px) {
+
     /* 슬라이드 */
     .swiper-button-next {
         right: 20px;
@@ -179,14 +183,16 @@
         font-size: 60%;
     }
 
-    .fc-daygrid-day-top, .fc-event-title {
+    .fc-daygrid-day-top,
+    .fc-event-title {
         font-size: 60%;
     }
 
-    
+
 }
 
 @media all and (max-width: 889px) {
+
     /* 달력 배경이벤트 텍스트 */
     .fc-bg-event .fc-event-title {
         display: none;

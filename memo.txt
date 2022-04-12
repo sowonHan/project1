@@ -10,7 +10,8 @@
 
 메뉴참고 https://www.sliderrevolution.com/resources/css-menu/
 
-버튼참고 https://www.sliderrevolution.com/resources/css-button-hover-effects/
+버튼참고 https://codepen.io/natalia-reshetnikova/pen/oRRjPP
+https://codepen.io/davidicus/pen/emgQKJ
 
 스크롤 https://michalsnik.github.io/aos/
 
@@ -31,5 +32,4 @@ http://www.deoksugung.go.kr/c/schedule/info/SB
 https://ticket.uforus.co.kr/web/main?shopEncode=#none
 
 COMING SOON
-창덕궁 달빛기행
 창덕궁 동궐도 나무 답사

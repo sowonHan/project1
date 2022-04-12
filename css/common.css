@@ -1,11 +1,108 @@
 @charset "UTF-8";
 
-header {
+/* 헤더 메뉴 */
+
+/* 메뉴 픽스시키기... */
+
+nav.main-menu {
     width: 100%;
     height: 65px;
-    background-color: #acecd7;
 }
 
 .menu {
+    width: 70%;
+    margin: 0 auto;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 65px;
+}
+
+.menu > li {
+    font-weight: 500;
+}
+
+/* 메뉴 애니메이션 */
+
+.line > ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.line > ul li:after {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: green;
+    transform: scale(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.line > ul li::before {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background-color: red;
+    transform: scale(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.line > ul li:hover:after, .line > ul li:hover:before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* 공용 버튼 설정 */
+
+.btn {
+    max-width: 200px;
+    height: 60px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    position: relative;
+    display: block;
+    padding: 0 15px;
+}
+
+/* 버튼 애니메이션 */
+
+
+
+/* 푸터 */
+
+footer {
+    width: 100%;
+    height: 160px;
+    position: relative;
+}
+
+footer > div {
+    font-size: 90%;
+    position: absolute;
+}
+
+footer > div:first-child {
+    left: 10px;
+    bottom: 10px;
+}
+
+footer > div:nth-of-type(2) {
+    right: 50px;
+    bottom: 10px;
+}
+
+footer > div:nth-of-type(3) {
+    right: 10px;
+    bottom: 10px;
 }

@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
             right: 'dayGridMonth,listWeek' //행사목록 월별로 바꾸려면 listMonth로 고치면 됨
         },
         locale: 'ko', // 한국어 설정
-        events: './json/events.json',
+        events: '../json/events.json',
         // live server로는 잘 되는데 chrome 브라우저로 여니까 안 돼^.T...
         
         // 이벤트 클릭했을 때 새 탭에서 열리게 하는 기능
