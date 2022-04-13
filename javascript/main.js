@@ -54,6 +54,14 @@ document.addEventListener('DOMContentLoaded', function () {
             right: 'dayGridMonth,listWeek' //행사목록 월별로 바꾸려면 listMonth로 고치면 됨
         },
         locale: 'ko', // 한국어 설정
+        // events: [
+        //     {
+        //         "title": "[예매] 경복궁 5월 야간 관람",
+        //         "start": "2022-04-22T10:00:00",
+        //         "color": "red",
+        //         "url": "https://ticket.11st.co.kr/Product/Detail?id=266194&prdNo=4239172482"
+        //     }
+        // ],
         events: '../json/events.json',
         // live server로는 잘 되는데 chrome 브라우저로 여니까 안 돼^.T...
         
