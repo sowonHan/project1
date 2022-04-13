@@ -19,7 +19,7 @@
 
 <body>
     <header>
-        <nav class="main-menu line">
+        <nav class="web-menu line">
             <ul class="menu">
                 <li><a href="./index.html">소개마당</a></li>
                 <li><a href="./pages/all_time.html">상설 행사</a></li>
@@ -28,6 +28,19 @@
                 <li><a href="./pages/gyeongbok.html">창경궁</a></li>
                 <li><a href="./pages/gyeongbok.html">덕수궁</a></li>
             </ul>
+        </nav>
+
+        <nav class="mobile-menu">
+            <div class="mobile-menu__gnb">
+                <div class="trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="mobile-menu__screen line"></div>
+            </div>
+            
         </nav>
     </header>
 
@@ -46,7 +59,6 @@
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
                 
@@ -97,6 +109,7 @@
         </div>
         </footer>
 
+    <script src="./library/jquery/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./library/fullcalendar-5.10.2/lib/main.min.js"></script>
     <script src="./library/fullcalendar-5.10.2/lib/locales-all.min.js"></script>

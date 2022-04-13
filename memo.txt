@@ -1,24 +1,8 @@
-문화재청 궁능유적본부 http://royal.cha.go.kr/main/index.do?siteCd=RPTC
-덕수궁 http://www.deoksugung.go.kr/
-경복궁 http://www.royalpalace.go.kr/
-창덕궁 http://www.cdg.go.kr/default.jsp
-창경궁 https://cgg.cha.go.kr/agapp/main/index.do?siteCd=CGG
-경복궁 옆 국립고궁박물관 https://www.gogung.go.kr/main.do
-한국문화재재단 https://www.chf.or.kr/cms/content/view/234
-
-초기화코드 https://meyerweb.com/eric/tools/css/reset/
-
-메뉴참고 https://www.sliderrevolution.com/resources/css-menu/
-
-버튼참고 https://codepen.io/natalia-reshetnikova/pen/oRRjPP
-https://codepen.io/davidicus/pen/emgQKJ
+https://animate.style/
 
 스크롤 https://michalsnik.github.io/aos/
 
 서브페이지 스크롤 참고 사이트 https://www.sssak.co.kr/kr/
-
-메뉴랑 슬라이더 한국의 집 https://www.chf.or.kr/kh 참고
-
 
 상설 행사 알림 페이지 하나 더 만들기!!!!!!!!!!
 창경궁, 덕수궁은 언제나 야간개방(월 휴궁)
@@ -33,3 +17,20 @@ https://ticket.uforus.co.kr/web/main?shopEncode=#none
 
 COMING SOON
 창덕궁 동궐도 나무 답사
+
+
+남산초록 #345f53
+단청빨강 #ae1932
+은행노란색 #f6b65a
+돌담회색 #a6a3a4
+기와진회색 #504e48
+고궁갈색 #5f4541
+산베연미색 #dcccac
+꽃담황토색 #e56f15
+
+
+*****최종 컨셉 색상**** 
+취람색 #5dc19b
+장단색 #e16350
+기와진회색 #504e48
+(메뉴 그림자는 돌담회색 #a6a3a4)

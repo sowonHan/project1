@@ -71,13 +71,13 @@
 
 .notice__container {
     height: 250px;
-    border: 10px solid #BD1137;
+    border: 10px solid #e16350;
     box-sizing: border-box;
 }
 
 .notice__content {
     box-sizing: border-box;
-    border: 10px solid #7CA051;
+    border: 10px solid #5dc19b;
     height: 230px;
     display: flex;
     flex-direction: column;
