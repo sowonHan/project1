@@ -6,8 +6,10 @@ $(function() {
 
         if ($(this).hasClass("open")) {
             $(".mobile-menu").show();
+            $(".trigger-container").addClass("shadow");
         } else {
             $(".mobile-menu").hide();
+            $(".trigger-container").removeClass("shadow");
         }
     });
 });
