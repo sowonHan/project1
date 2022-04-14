@@ -9,7 +9,7 @@
     z-index: 99;
     left: 0;
     top: 0;
-    box-shadow: 0 1px 4px rgb(166, 163, 164, 0.5);
+    box-shadow: 0 1px 4px rgb(80, 78, 72, 0.6);
 }
 
 .wrap {
@@ -41,7 +41,6 @@
     padding-top: 10px;
     padding-bottom: 10px;
     position: relative;
-    overflow: hidden;
 }
 
 .line > ul li:after {
@@ -84,7 +83,7 @@
 }
 
 .shadow {
-    box-shadow: 0 1px 4px rgb(166, 163, 164, 0.5);
+    box-shadow: 0 1px 4px rgb(80, 78, 72, 0.6);
 }
 
 .mobile-menu {
@@ -116,7 +115,6 @@
     width: 35px;
     height: 25px;
     position: relative;
-    overflow: hidden;
     top: 20px;
     left: 20px;
     -webkit-transform: rotate(0deg);
@@ -185,7 +183,6 @@
 /* 공용 버튼 설정 */
 
 .btn {
-    max-width: 200px;
     height: 60px;
     font-size: 1rem;
     font-weight: bold;
@@ -205,9 +202,8 @@
 
 footer {
     width: 100%;
-    height: 160px;
     position: relative;
-    overflow: hidden;
+    margin-top: 300px;
 }
 
 footer > div {
@@ -215,20 +211,21 @@ footer > div {
     position: absolute;
 }
 
-footer > div:first-child {
+footer > div:first-of-type {
     left: 10px;
     bottom: 10px;
 }
 
 footer > div:nth-of-type(2) {
-    right: 50px;
-    bottom: 10px;
-}
-
-footer > div:nth-of-type(3) {
     right: 10px;
     bottom: 10px;
 }
+
+footer img {
+    width: 30px;
+    height: 30px;
+}
+
 
 /* 미디어 쿼리 */
 
@@ -240,12 +237,14 @@ footer > div:nth-of-type(3) {
     .header > .trigger-container {
         display: block;
     }
+}
 
-    .footer {
-        position: initial;
+@media all and (max-width: 939px) {
+    footer {
+        position: static;
     }
-
-    .footer > div {
-        position: initial;
+    footer > div {
+        position: static;
+        margin: 5px;
     }
 }
