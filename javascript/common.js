@@ -7,9 +7,11 @@ $(function() {
         if ($(this).hasClass("open")) {
             $(".mobile-menu").show();
             $(".trigger-container").addClass("shadow");
+            $("header").removeClass("transparent");
         } else {
             $(".mobile-menu").hide();
             $(".trigger-container").removeClass("shadow");
+            $("header").addClass("transparent");
         }
     });
 });

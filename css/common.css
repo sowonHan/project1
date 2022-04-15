@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* 헤더 픽스 */
+/* 헤더, 푸터 픽스 */
 
 .header {
     background: white;
@@ -12,11 +12,25 @@
     box-shadow: 0 1px 4px rgb(80, 78, 72, 0.6);
 }
 
+.footer-fix {
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
 .wrap {
     margin-top: 65px;
+    margin-bottom: 300px;
 }
 
 /* 웹 메뉴 */
+
+.transparent {
+    background: transparent;
+    background-color: transparent;
+}
 
 .header > .trigger {
     display: none;
@@ -78,7 +92,7 @@
 
 .trigger-container {
     height: 65px;
-    background-color: white;
+    background-color: transparent;
     display: none;
 }
 
@@ -182,46 +196,97 @@
 
 /* 공용 버튼 설정 */
 
-.btn {
-    height: 60px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
-    line-height: 60px;
-    display: block;
-    padding: 0 15px;
-    outline: 0;
-    border: 0;
+.btn-container {
+    width: 250px;
+    height: 50px;
+    position: relative;
+    margin: 30px 0;
 }
 
-/* 버튼 애니메이션 */
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+.link-wrapper {
+    position: relative;
+}
 
+.link-wrapper > a {
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 500;
+    text-decoration: none;
+    background: #333;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #333;
+    transition: all .35s;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all .35s;
+}
+
+.icon svg {
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: rotate(-45deg);
+    fill: #504e48;
+    transition: all .35s;
+}
+
+.link-wrapper > a:hover {
+    width: 200px;
+    border: 3px solid #e16350;
+    background: transparent;
+    color: #333;
+}
+
+.link-wrapper > a:hover+.icon {
+    border: 3px solid #5dc19b;
+    right: -25%;
+}
 
 /* 푸터 */
 
-footer {
+.footer__container {
     width: 100%;
     position: relative;
-    margin-top: 300px;
 }
 
-footer > div {
+.footer__container > div {
     font-size: 90%;
     position: absolute;
 }
 
-footer > div:first-of-type {
+.footer__container > div:first-of-type {
     left: 10px;
     bottom: 10px;
 }
 
-footer > div:nth-of-type(2) {
+.footer__container > div:nth-of-type(2) {
     right: 10px;
     bottom: 10px;
 }
 
-footer img {
+.footer__container img {
     width: 30px;
     height: 30px;
 }
@@ -240,11 +305,15 @@ footer img {
 }
 
 @media all and (max-width: 939px) {
-    footer {
+    .footer__container {
         position: static;
     }
-    footer > div {
+    
+    .footer__container > div {
         position: static;
-        margin: 5px;
+    }
+    
+    .footer__container > div:last-of-type {
+        margin-bottom: 5px;
     }
 }

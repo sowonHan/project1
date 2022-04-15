@@ -123,14 +123,18 @@
 
 /* 지도 */
 
-.map {
+.map-container {
     width: 50%;
+}
+
+#map {
+    max-width: 600px;
+    height: 500px;
 }
 
 /* 홈페이지 및 sns */
 
 .info {
-    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,11 +144,7 @@
 .info > h1 {
     font-size: 1.5em;
     font-family: 'Noto Serif KR', serif;
-}
-
-.info__btn {
-    background-color: #f6b65a;
-    margin: 40px 0 20px;
+    margin-bottom: 15px;
 }
 
 .sns {

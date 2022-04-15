@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,107 @@
 
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/sub.css">
-    
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap">
+    <link rel="stylesheet" href="../library/fullpage/fullpage.min.css">
+
     <title>고궁 산책</title>
 </head>
+
 <body>
-    
+    <header class="header transparent">
+        <div class="trigger-container">
+            <div class="trigger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <nav class="web-menu line">
+            <ul class="web-menu__list">
+                <li><a href="../index.html">소개마당</a></li>
+                <li><a href="./all_time.html">상설 행사</a></li>
+                <li><a href="./changdeok.html">경복궁</a></li>
+                <li><a href="./changdeok.html">창덕궁</a></li>
+                <li><a href="./changdeok.html">창경궁</a></li>
+                <li><a href="./changdeok.html">덕수궁</a></li>
+            </ul>
+        </nav>
+
+        <nav class="mobile-menu">
+            <div class="mobile-menu__screen line">
+                <ul class="mobile-menu__list">
+                    <li><a href="../index.html">소개마당</a></li>
+                    <li><a href="./all_time.html">상설 행사</a></li>
+                    <li><a href="./changdeok.html">경복궁</a></li>
+                    <li><a href="./changdeok.html">창덕궁</a></li>
+                    <li><a href="./changdeok.html">창경궁</a></li>
+                    <li><a href="./changdeok.html">덕수궁</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="fullpage">
+        <div class="section">
+            <div class="back-1">
+                <div class="desc">
+                    Some section1
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="back-2">
+                <div class="desc">
+                    Some section1
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="back-3">
+                <div class="desc">
+                    Some section1
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="back-4">
+                <div class="desc">
+                    Some section1
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-fix">
+        <div class="footer__container">
+            <div>ⓒ 2022. Cultural Heritage Administration Royal Palaces and Tombs Center. All Rights reserved.</div>
+            <div>
+                ⓒ 2022. 고궁산책 Built with
+                <a href="https://github.com/sowonHan/walking_palace" target="_blank">
+                    <img src="../images/GitHub-Mark-120px-plus.png" alt="GitHub 로고"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../library/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../library/fullpage/fullpage.min.js"></script>
+    <script src="../javascript/common.js"></script>
+    <script>
+        new fullpage('#fullpage', {
+            //options here
+            sectionsColor: ['#1bbc9b', '#7BAABE', 'whitesmoke', '#ccddff'],
+            autoScrolling: true,
+            scrollHorizontally: true,
+            responsiveWidth: 0, //픽셀로 정의된 폭 아래에 정상 스크롤(autoScrolling:false)을 씁니다.
+            credits: {
+                enabled: false
+                // default {enabled: true, label: 'Made with fullpage.js', position: 'right'}
+            }
+        });
+    </script>
 </body>
+
 </html>

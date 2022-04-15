@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/sub.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap">
-    <link rel="stylesheet" href="../library/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap">
 
     <title>고궁 산책</title>
 </head>
@@ -25,15 +25,15 @@
                 <span></span>
             </div>
         </div>
-        
+
         <nav class="web-menu line">
             <ul class="web-menu__list">
                 <li><a href="../index.html">소개마당</a></li>
                 <li><a href="./all_time.html">상설 행사</a></li>
-                <li><a href=".changdeok.html">경복궁</a></li>
-                <li><a href=".changdeok.html">창덕궁</a></li>
-                <li><a href=".changdeok.html">창경궁</a></li>
-                <li><a href=".changdeok.html">덕수궁</a></li>
+                <li><a href="./changdeok.html">경복궁</a></li>
+                <li><a href="./changdeok.html">창덕궁</a></li>
+                <li><a href="./changdeok.html">창경궁</a></li>
+                <li><a href="./changdeok.html">덕수궁</a></li>
             </ul>
         </nav>
 
@@ -41,11 +41,11 @@
             <div class="mobile-menu__screen line">
                 <ul class="mobile-menu__list">
                     <li><a href="../index.html">소개마당</a></li>
-                    <li><a href=".all_time.html">상설 행사</a></li>
-                    <li><a href=".changdeok.html">경복궁</a></li>
-                    <li><a href=".changdeok.html">창덕궁</a></li>
-                    <li><a href=".changdeok.html">창경궁</a></li>
-                    <li><a href=".changdeok.html">덕수궁</a></li>
+                    <li><a href="./all_time.html">상설 행사</a></li>
+                    <li><a href="./changdeok.html">경복궁</a></li>
+                    <li><a href="./changdeok.html">창덕궁</a></li>
+                    <li><a href="./changdeok.html">창경궁</a></li>
+                    <li><a href="./changdeok.html">덕수궁</a></li>
                 </ul>
             </div>
         </nav>
@@ -56,8 +56,11 @@
             <div class="background changdeok">
                 <div class="desc__container">
                     <div class="desc__text">
-                        <p><span>창덕궁</span>은 조선왕조 제3대 태종 5년(1405) 경복궁이 이궁되면서 지어진 궁궐입니다. 이웃한 창경궁과 서로 다른 별개의 용도로 사용되었으나 두 궁궐이 하나의 궁역을 이루고 있기에, 과거에는 이들을 형제궁궐이라 하여 ‘동궐’이라 불렀습니다.</p>
-                        <p>1610년 광해군이 정궁으로 사용한 후부터 1868년 고종이 경복궁을 중건할 때까지, 창덕궁은 역대 임금들이 거처했던 궁궐입니다. 여러 차례의 화재로 소실과 복구가 반복되었지만 조선의 궁궐 가운데 가장 오랜 기간인 258년 동안, 임금이 정사를 돌보는 법궁의 역할을 지켜왔습니다. 또한 조선의 다른 궁궐과 비교했을 때 창덕궁은 그 원형이 가장 잘 보존되어 있는 궁이기도 합니다.</p>
+                        <p><span>창덕궁</span>은 조선왕조 제3대 태종 5년(1405) 경복궁이 이궁되면서 지어진 궁궐입니다. 이웃한 창경궁과 서로 다른 별개의 용도로 사용되었으나 두
+                            궁궐이 하나의 궁역을 이루고 있기에, 과거에는 이들을 형제궁궐이라 하여 ‘동궐’이라 불렀습니다.</p>
+                        <p>1610년 광해군이 정궁으로 사용한 후부터 1868년 고종이 경복궁을 중건할 때까지, 창덕궁은 역대 임금들이 거처했던 궁궐입니다. 여러 차례의 화재로 소실과 복구가
+                            반복되었지만 조선의 궁궐 가운데 가장 오랜 기간인 258년 동안, 임금이 정사를 돌보는 법궁의 역할을 지켜왔습니다. 또한 조선의 다른 궁궐과 비교했을 때 창덕궁은 그
+                            원형이 가장 잘 보존되어 있는 궁이기도 합니다.</p>
                         <p>이러한 창덕궁은 자연과의 조화로운 배치가 탁월하다는 점을 인정받으면서 한국의 궁궐 중 유일하게 유네스코 세계유산으로 등재되어 있습니다.</p>
                     </div>
                 </div>
@@ -76,12 +79,26 @@
                         <p>버스 및 자동차 교통편은 창덕궁 관리소 홈페이지 참고</p>
                     </div>
                 </div>
-                <div class="map"></div>
+                <div class="map-container">
+                    <div id="map"></div>
+                </div>
             </section>
-    
+
             <section class="info">
                 <h1>창덕궁 관리소 홈페이지를 통해 더 자세한 내용을 확인해보세요!</h1>
-                <a href="http://www.cdg.go.kr/default.jsp" target="_blank" class="btn info__btn">관리소 둘러보기</a>
+                <div class="btn-container">
+                    <div class="wrapper">
+                        <div class="link-wrapper">
+                            <a href="http://www.cdg.go.kr/default.jsp" target="_blank">관리소 둘러보기</a>
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+                                    <path
+                                        d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="sns">
                     <div class="sns__tw">
                         <a href="https://twitter.com/changdeokpalace" target="_blank"></a>
@@ -95,16 +112,45 @@
     </div>
 
     <footer>
-        <div>ⓒ 2022. Cultural Heritage Administration Royal Palaces and Tombs Center. All Rights reserved.</div>
-        <div>ⓒ 2022. 고궁산책 Built with
-            <a href="https://github.com/sowonHan/walking_palace" target="_blank">
-            <img src="../images/GitHub-Mark-120px-plus.png" alt="GitHub 로고"></a>
+        <div class="footer__container">
+            <div>ⓒ 2022. Cultural Heritage Administration Royal Palaces and Tombs Center. All Rights reserved.</div>
+            <div>
+                ⓒ 2022. 고궁산책 Built with
+                <a href="https://github.com/sowonHan/walking_palace" target="_blank">
+                <img src="../images/GitHub-Mark-120px-plus.png" alt="GitHub 로고"></a>
+            </div>
         </div>
     </footer>
 
     <script src="../library/jquery/jquery-3.6.0.min.js"></script>
     <script src="../javascript/common.js"></script>
-    <script src="../javascript/map.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d4dff0d89750e76742c25d4e5e99bf55"></script>
+
+    <script>
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = {
+                center: new kakao.maps.LatLng(37.58218329580133, 126.99169576642828), // 지도의 중심좌표
+                level: 5 // 지도의 확대 레벨
+            };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+        // 마커가 표시될 위치입니다 
+        var markerPosition = new kakao.maps.LatLng(37.58218329580133, 126.99169576642828);
+
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map);
+
+        // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+        // marker.setMap(null);
+
+        // sameSite 문제로 크롬에서 이미지와 지도가 나오지 않음
+    </script>
 </body>
 
 </html>
