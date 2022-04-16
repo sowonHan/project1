@@ -3,10 +3,9 @@
 /* 슬라이드 */
 
 .slider__container {
-    width: 100%;
+    max-width: 1920px;
     height: 600px;
-    background-color: pink;
-    /* 나중에 백그라운드로 이미지 넣기 */
+    background-image: url(../images/slide_background.png);
 }
 
 .slider__content {
