@@ -4,20 +4,6 @@ https://animate.style/
 
 서브페이지 스크롤 참고 사이트 https://www.sssak.co.kr/kr/
 
-상설 행사 알림 페이지 하나 더 만들기!!!!!!!!!!
-창경궁, 덕수궁은 언제나 야간개방(월 휴궁)
-https://twitter.com/chlove_u/status/1509761264213721094
-경복궁 칠궁 특별관람은 상설 행사. 현장 접수
-https://www.royalpalace.go.kr/content/board/view.asp?seq=822&page=&c1=0&c2=%C4%A5%B1%C3
-https://www.royalpalace.go.kr/content/guide/guide32.asp
-덕수궁 석조전 대한제국역사관 관람은 상설 행사. 예약제
-http://www.deoksugung.go.kr/c/schedule/info/SB
-창덕궁 후원관람 상설 행사. 예약제
-https://ticket.uforus.co.kr/web/main?shopEncode=#none
-
-COMING SOON
-창덕궁 동궐도 나무 답사
-
 
 남산초록 #345f53
 단청빨강 #ae1932
@@ -34,6 +20,7 @@ COMING SOON
 장단색 #e16350
 기와진회색 #504e48
 하얀색
+은행노란색 #f6b65a
 
 카카오맵 좌표 (위도, 경도 순)
 창덕궁 : 37.58218329580133, 126.99169576642828
@@ -44,9 +31,9 @@ COMING SOON
 
 ======해야할 일 순서=======
 
-상설행사 페이지와 고궁 소개 페이지에 넣을 텍스트 작성
+고궁 소개 페이지에 넣을 텍스트 작성
 스크롤 애니메이션 추가
-animate.css 추가
+animate.css, typeitjs 추가
 메뉴 열리고 닫히는 애니메이션 추가
 트위터랑 인스타그램 그냥 트윗 담아가기랑 퍼가기만 눌러도 코드가 생성된다...추가해서 애니메이션 넣을 것까지 고민해보자
 달력 cors 문제 해결

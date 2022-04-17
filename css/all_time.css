@@ -1,0 +1,382 @@
+@charset "UTF-8";
+
+.back-1 {
+    background-image: url(../images/changgyeong_all.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.back-2 {
+    background-image: url(../images/chilgung.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.back-3 {
+    background-image: url(../images/seokjojeon_final.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.back-4 {
+    background-image: url(../images/huwon_final.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* 공통 설정 */
+
+.desc {
+    background-color: rgb(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.desc__text {
+    color: white;
+    max-width: 40%;
+}
+
+
+.right {
+    justify-content: flex-end;
+}
+
+.right__text {
+    margin-right: 100px;
+}
+
+.left__text {
+    margin-left: 100px;
+}
+
+.center {
+    justify-content: center;
+}
+
+.btn__double {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn__single {
+    display: flex;
+    justify-content: center;
+}
+
+/* 섹션 1 야간개장 */
+
+.night > h1 {
+    font-size: 3em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 2px #111;
+}
+
+.night > p {
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-top: 17px;
+    text-shadow: 2px 2px 2px #111;
+}
+
+.night > p:last-of-type {
+    font-size: 1.1em;
+    line-height: 120%;
+    text-shadow: 2px 2px 2px #111;
+    margin-top: 23px;
+}
+
+/* 섹션 2 칠궁 */
+
+.chil > h1 {
+    font-size: 3em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 2px #111;
+}
+
+.chil > p {
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-top: 13px;
+    line-height: 140%;
+    text-shadow: 2px 2px 2px #111;
+}
+
+.chil > p:nth-of-type(4) {
+    font-size: 1.1em;
+    line-height: 120%;
+    margin-top: 25px;
+    text-shadow: 2px 2px 2px #111;
+}
+
+.chil > p:nth-of-type(5) {
+    font-size: 1.1em;
+    line-height: 120%;
+    text-shadow: 2px 2px 2px #111;
+    margin-top: 5px;
+}
+
+/* 섹션 2 왼쪽버튼 */
+
+.btn-container1 {
+    width: 250px;
+    height: 50px;
+    position: relative;
+    margin: 30px 0 0 0;
+}
+
+.btn-container1 > .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-container1 .link-wrapper {
+    position: relative;
+}
+
+.btn-container1 .link-wrapper > a {
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 500;
+    text-decoration: none;
+    background: #5dc19b;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #5dc19b;
+    transition: all .35s;
+}
+
+.btn-container1 .icon {
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all .35s;
+}
+
+.btn-container1 .icon svg {
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: rotate(-45deg);
+    fill: #f6b65a;
+    transition: all .35s;
+}
+
+.btn-container1 .link-wrapper > a:hover {
+    width: 200px;
+    border: 3px solid #f6b65a;
+    background: transparent;
+    color: white;
+    text-shadow: 2px 2px 2px #111;
+}
+
+.btn-container1 .link-wrapper > a:hover+.icon {
+    border: 3px solid #f6b65a;
+    right: -25%;
+}
+
+/* 섹션 2 오른쪽버튼 */
+
+.btn-container2 {
+    width: 300px;
+    height: 50px;
+    position: relative;
+    margin: 30px 0 0 0;
+}
+
+.btn-container2 > .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-container2 .link-wrapper {
+    position: relative;
+}
+
+.btn-container2 .link-wrapper > a {
+    display: block;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 500;
+    text-decoration: none;
+    background: #e16350;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #e16350;
+    transition: all .35s;
+}
+
+.btn-container2 .icon {
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all .35s;
+}
+
+.btn-container2 .icon svg {
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: rotate(-45deg);
+    fill: #f6b65a;
+    transition: all .35s;
+}
+
+.btn-container2 .link-wrapper > a:hover {
+    width: 250px;
+    border: 3px solid #f6b65a;
+    background: transparent;
+    color: white;
+    text-shadow: 2px 2px 2px #111;
+}
+
+.btn-container2 .link-wrapper > a:hover+.icon {
+    border: 3px solid #f6b65a;
+    right: -20%;
+}
+
+/* 섹션 3 석조전 */
+
+.seok > h1 {
+    font-size: 3em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 2px #111;
+}
+
+.seok > p {
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-top: 10px;
+    line-height: 140%;
+    text-shadow: 2px 2px 2px #111;
+}
+
+.seok > p:last-of-type {
+    font-size: 1.1em;
+    line-height: 120%;
+    margin-top: 25px;
+    text-shadow: 2px 2px 2px #111;
+}
+
+/* 섹션3 1개짜리 버튼 */
+
+.btn-container3 {
+    width: 250px;
+    height: 50px;
+    position: relative;
+    margin: 30px 0 0 0;
+}
+
+.btn-container3 > .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-container3 .link-wrapper {
+    position: relative;
+}
+
+.btn-container3 .link-wrapper > a {
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 500;
+    text-decoration: none;
+    background: #e16350;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #e16350;
+    transition: all .35s;
+}
+
+.btn-container3 .icon {
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all .35s;
+}
+
+.btn-container3 .icon svg {
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: rotate(-45deg);
+    fill: #f6b65a;
+    transition: all .35s;
+}
+
+.btn-container3 .link-wrapper > a:hover {
+    width: 200px;
+    border: 3px solid #f6b65a;
+    background: transparent;
+    color: white;
+    text-shadow: 2px 2px 2px #111;
+}
+
+.btn-container3 .link-wrapper > a:hover+.icon {
+    border: 3px solid #f6b65a;
+    right: -25%;
+}
+
+/* 섹션 4 후원 */
+
+.huwon > h1 {
+    font-size: 3em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 2px #111;
+}
+
+.huwon > p {
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-top: 13px;
+    line-height: 140%;
+    text-shadow: 2px 2px 2px #111;
+}
+
+.huwon > p:last-of-type {
+    font-size: 1.1em;
+    line-height: 120%;
+    margin-top: 25px;
+    text-shadow: 2px 2px 2px #111;
+}
