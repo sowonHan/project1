@@ -15,10 +15,25 @@
     background-size: cover;
 }
 
+.changgyeong {
+    background-image: url(../images/changgyeong.jpg);
+    background-size: cover;
+}
+
+.deoksu {
+    background-image: url(../images/deoksu.jpg);
+    background-size: cover;
+}
+
+.gyeongbok {
+    background-image: url(../images/gyeongbok_bridge.jpg);
+    background-size: cover;
+}
+
 .desc__container {
     width: 800px;
     height: 600px;
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,17 +49,19 @@
     letter-spacing: 0.1rem;
     line-height: 160%;
     font-family: 'Gowun Batang', serif;
-    /* font-family: 'Noto Serif KR', serif; */
+    text-shadow: 2px 2px 2px #111;
 }
 
 .desc__text > p:nth-of-type(2) {
     margin: 5px 0;
     font-family: 'Gowun Batang', serif;
+    text-shadow: 2px 2px 2px #111;
 }
 
 .desc__text > p > span {
     font-size: 2.2em;
     font-family: 'Gowun Batang', serif;
+    text-shadow: 2px 2px 2px #111;
 }
 
 /* 최대너비 있는 콘텐츠 */

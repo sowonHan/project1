@@ -3,9 +3,11 @@
 /* 슬라이드 */
 
 .slider__container {
-    max-width: 1920px;
+    max-width: 1903px;
     height: 600px;
     background-image: url(../images/slide_background.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .slider__content {
@@ -49,6 +51,93 @@
 .swiper {
     margin-left: auto;
     margin-right: auto;
+}
+
+.slide__one {
+    background-image: url(../images/slide_main.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide__two {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/slide_spring.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide__three {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/slide_moran.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide__four {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/slide_gyeong_night.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide__five {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/slide_dalbit.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide__six {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/slide_saeng.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide__seven {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/slide_hoeru.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide__eight {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/slide_tree.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide__nine {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/slide_festival.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* 최대너비 있는 콘텐츠 */
@@ -107,7 +196,7 @@
 /* 상설 행사 안내 */
 
 .all-time__container {
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .all-time__content {

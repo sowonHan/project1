@@ -28,7 +28,7 @@
 /* 웹 메뉴 */
 
 .transparent {
-    background: transparent;
+    background-color: rgb(255, 255, 255, 0.3);
 }
 
 .header > .trigger {

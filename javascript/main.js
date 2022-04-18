@@ -13,7 +13,7 @@ var swiper = new Swiper('.mySwiper', {
         prevEl: '.swiper-button-prev',
     },
     autoplay: {
-        delay: 2500,
+        delay: 3000,
         disableOnInteraction: false,
         pauseOnMouseEnter: true
     },
@@ -34,6 +34,35 @@ function getDirection() {
 
 /* 달력 */
 
+// resize될 때 화면 바꾸기 시도 중인데 안 되는군
+// (function() {
+//     var throttle = function(type, name, obj) {
+//         obj = obj || window;
+//         var running = false;
+//         var func = function() {
+//             if (running) { return; }
+//             running = true;
+//             requestAnimationFrame(function() {
+//                 obj.dispatchEvent(new CustomEvent(name));
+//                 running = false;
+//             });
+//         };
+//         obj.addEventListener(type, func);
+//     };
+
+//     throttle("resize", "optimizedResize");
+// })();
+
+// let getView = () => {
+//     window.addEventListener('optimizedResize', () => {
+//         var intFrameWidth = window.innerWidth;
+
+//         const view = intFrameWidth <= 329 ? 'listMonth' : 'dayGridMonth';
+
+//         return view;
+//     });
+// }
+
 document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
 
@@ -51,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
         headerToolbar: {
             left: 'prev,next today',
             center: 'title',
-            right: 'dayGridMonth,listWeek' //행사목록 월별로 바꾸려면 listMonth로 고치면 됨
+            right: 'dayGridMonth,listMonth' //행사목록 월별로 바꾸려면 listMonth로 고치면 됨
         },
         locale: 'ko', // 한국어 설정
         // events: [
@@ -76,14 +105,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     calendar.render();
-    // calendar.changeView(getView());
+    calendar.changeView(getView());
 });
 
-// swiper 코드 참고해서 반응형으로 너비에 따라 달력 뷰를 바꿔주려고 했는데, 너비 줄인 상태에서 새로고침을 해야만 뷰가 바뀐다...자동으로 바뀔 수 없을까? 근데 급한 거 아니니까 나중에 여쭤보기로
-// let getView = () => {
-//     var intFrameWidth = window.innerWidth;
+/* 스크롤 애니메이션 */
 
-//     const view = intFrameWidth <= 329 ? 'listWeek' : 'dayGridMonth';
-
-//     return view;
-// }
+AOS.init();

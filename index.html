@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./library/fullcalendar-5.10.2/lib/main.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./library/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./library/aos/aos.css">
 
     <title>고궁 산책</title>
 </head>
@@ -32,22 +34,22 @@
             <ul class="web-menu__list">
                 <li><a href="./index.html">소개마당</a></li>
                 <li><a href="./pages/all_time.html">상설 행사</a></li>
-                <li><a href="./pages/changdeok.html">경복궁</a></li>
+                <li><a href="./pages/gyeongbok.html">경복궁</a></li>
                 <li><a href="./pages/changdeok.html">창덕궁</a></li>
-                <li><a href="./pages/changdeok.html">창경궁</a></li>
-                <li><a href="./pages/changdeok.html">덕수궁</a></li>
+                <li><a href="./pages/changgyeong.html">창경궁</a></li>
+                <li><a href="./pages/deoksu.html">덕수궁</a></li>
             </ul>
         </nav>
 
         <nav class="mobile-menu">
             <div class="mobile-menu__screen line">
                 <ul class="mobile-menu__list">
-                    <li><a href="./index.html">소개마당</a></li>
-                    <li><a href="./pages/all_time.html">상설 행사</a></li>
-                    <li><a href="./pages/changdeok.html">경복궁</a></li>
-                    <li><a href="./pages/changdeok.html">창덕궁</a></li>
-                    <li><a href="./pages/changdeok.html">창경궁</a></li>
-                    <li><a href="./pages/changdeok.html">덕수궁</a></li>
+                <li><a href="./index.html">소개마당</a></li>
+                <li><a href="./pages/all_time.html">상설 행사</a></li>
+                <li><a href="./pages/gyeongbok.html">경복궁</a></li>
+                <li><a href="./pages/changdeok.html">창덕궁</a></li>
+                <li><a href="./pages/changgyeong.html">창경궁</a></li>
+                <li><a href="./pages/deoksu.html">덕수궁</a></li>
                 </ul>
             </div>
         </nav>
@@ -55,18 +57,35 @@
 
     <div class="wrap">
         <section class="slider">
-            <div class="slider__container">
+            <div class="slider__container animate__animated animate__fadeIn">
                 <div class="slider__content">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">Slide 1</div>
-                            <div class="swiper-slide">Slide 2</div>
-                            <div class="swiper-slide">Slide 3</div>
-                            <div class="swiper-slide">Slide 4</div>
-                            <div class="swiper-slide">Slide 5</div>
-                            <div class="swiper-slide">Slide 6</div>
-                            <div class="swiper-slide">Slide 7</div>
-                            <div class="swiper-slide">Slide 8</div>
+                            <div class="swiper-slide slide__one"></div>
+                            <div class="swiper-slide">
+                                <a class="slide__two" href="https://www.instagram.com/p/Cbya0OYPh9n/?utm_source=ig_web_copy_link" target="_blank"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="slide__three" href="http://cgg.cha.go.kr/agapp/public/bbs/selectBoardArticle.do?bbsId=BBSMSTR_000000000195&nttId=31945&bbsTyCode=BBST03&bbsAttrbCode=BBSA03&authFlag=&pageIndex=1&pageNo=75040000&ctgoryId=&siteCd=CGG&searchBgnDe=&searchEndDe=&searchCnd=4&searchWrd=" target="_blank"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="slide__four" href="http://www.royalpalace.go.kr/content/board/view.asp?seq=815&page=&c1=&c2=" target="_blank"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="slide__five" href="http://www.cdg.go.kr/cms_for_cdg/show.jsp?show_no=22&check_no=3&c_relation=46&c_relation2=108" target="_blank"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="slide__six" href="https://www.chf.or.kr/short/j404" target="_blank"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="slide__seven" href="https://www.royalpalace.go.kr/content/board/view.asp?seq=814&page=&c1=&c2=" target="_blank"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="slide__eight" href="http://cgg.cha.go.kr/agapp/public/bbs/selectBoardArticle.do?bbsId=BBSMSTR_000000000195&nttId=31904&bbsTyCode=BBST03&bbsAttrbCode=BBSA03&authFlag=&pageIndex=1&pageNo=75040000&ctgoryId=&siteCd=CGG&searchBgnDe=&searchEndDe=&searchCnd=4&searchWrd=" target="_blank"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="slide__nine" href="https://www.chf.or.kr/cms/content/view/521" target="_blank"></a>
+                            </div>
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
@@ -79,11 +98,11 @@
         <div class="wrap__maxwidth">
             <section class="calendar">
                 <div class="calendar__container">
-                    <div id='calendar'></div>
+                    <div id='calendar' class="animate__animated animate__fadeIn"></div>
                 </div>
             </section>
 
-            <section class="notice">
+            <section class="notice" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">
                 <div class="notice__container">
                     <div class="notice__content">
                         <div class="comming-soon">
@@ -101,10 +120,10 @@
             <section class="all-time">
                 <div class="all-time__container">
                     <div class="all-time__content">
-                        <p>"선착순은 너무 피곤해..."</p>
-                        <p>"행사 기간과 일정이 안 맞아서 갈 수가 없네..."</p>
-                        <h6>그런 당신을 위한</h6>
-                        <div class="btn-container">
+                        <p data-aos="fade-right" data-aos-easing="linear" data-aos-delay="1000"data-aos-offset="0" data-aos-duration="600">"선착순은 너무 피곤해..."</p>
+                        <p data-aos="fade-left" data-aos-easing="linear" data-aos-delay="1600" data-aos-offset="0" data-aos-duration="600">"행사 기간과 일정이 안 맞아서 갈 수가 없네..."</p>
+                        <h6 data-aos="fade-zoom-in" data-aos-easing="linear" data-aos-delay="2300" data-aos-offset="0" data-aos-duration="600">그런 당신을 위한</h6>
+                        <div class="btn-container" data-aos="fade-zoom-in" data-aos-easing="linear" data-aos-delay="3000" data-aos-offset="0" data-aos-duration="600">
                             <div class="wrapper">
                                 <div class="link-wrapper">
                                     <a href="./pages/all_time.html">상설 행사 둘러보기</a>
@@ -138,6 +157,7 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./library/fullcalendar-5.10.2/lib/main.min.js"></script>
     <script src="./library/fullcalendar-5.10.2/lib/locales-all.min.js"></script>
+    <script src="./library/aos/aos.js"></script>
     <script src="./javascript/common.js"></script>
     <script src="./javascript/main.js"></script>
 </body>
