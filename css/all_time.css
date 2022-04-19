@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 .back-1 {
-    background-image: url(../images/changgyeong_all.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -13,7 +12,6 @@
 }
 
 .back-3 {
-    background-image: url(../images/seokjojeon_final.jpg);
     background-size: cover;
     background-position: center;
 }

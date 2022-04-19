@@ -12,7 +12,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap">
     <link rel="stylesheet" href="../library/fullpage/fullpage.min.css">
-    <link rel="stylesheet" href="../library/fullpage/fullpage.min.css.map">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <title>고궁 산책</title>
 </head>
@@ -39,7 +39,7 @@
             </ul>
         </nav>
 
-        <nav class="mobile-menu">
+        <nav class="mobile-menu animate__animated animate__slideInLeft">
             <div class="mobile-menu__screen line">
                 <ul class="mobile-menu__list">
                 <li><a href="../index.html">소개마당</a></li>
@@ -67,7 +67,7 @@
         </div>
         <div class="section back-2">
             <div class="desc left">
-                <div class="desc__text left__text chil">
+                <div class="desc__text left__text chil is-animated">
                     <h1>청와대 옆 칠궁 특별 관람</h1>
                     <p>칠궁은 조선의 왕 혹은 왕으로 추존된 사람을 낳았으나 왕후는 되지 못하여, 종묘에 모셔지지 못한 후궁 출신의 생모 일곱 분을 모시는 사당입니다.</p>
                     <p>1968년 이후로 출입이 금지되어 있다가 2001년부터 청와대 관람 코스의 일부가 되었고, 2018년부터는 칠궁만 별도로 관람이 가능해졌습니다.</p>
@@ -107,7 +107,7 @@
         </div>
         <div class="section back-3">
             <div class="desc right">
-                <div class="desc__text right__text seok">
+                <div class="desc__text right__text seok is-animated">
                     <h1>석조전 대한제국역사관 관람</h1>
                     <p>덕수궁 내에 위치한 석조전은 고종에 의해 대한제국이 선포된 이후 황궁의 정전 역할을 맡았습니다.</p>
                     <p>문화재청은 식민 통치 시절 훼손되었던 석조전을 원형대로 복원하면서, 대한제국의 역사적 의미를 국민들에게 널리 알리고자 2014년 10월에 '석조전 대한제국역사관'이라는 이름으로 이곳을 개관했습니다.</p>
@@ -134,7 +134,7 @@
         </div>
         <div class="section back-4">
             <div class="desc left">
-                <div class="desc__text left__text huwon">
+                <div class="desc__text left__text huwon is-animated">
                     <h1>왕실정원 후원 관람</h1>
                     <p>창덕궁은 크게 두 지역으로 나뉘는데 우리가 입장권만 구매하면 언제나 자유롭게 관람할 수 있는 '전각 지역'이 그 중 하나입니다. 그리고 여러분께 소개할 다른 하나가 바로 숲으로 이루어진 왕실 정원 '후원 지역'입니다.</p>
                     <p>이전에는 관리기관 명칭인 '비원'으로 많이 불렸으나 현재는 문헌상에서 가장 많이 사용된 '후원'을 공식 명칭으로 채택하고 있습니다.</p>
@@ -173,19 +173,9 @@
 
     <script src="../library/jquery/jquery-3.6.0.min.js"></script>
     <script src="../library/fullpage/fullpage.min.js"></script>
+    <script src="../library/jquery.backstretch.js"></script>
     <script src="../javascript/common.js"></script>
-    <script>
-        new fullpage('#fullpage', {
-            //options here
-            sectionsColor: ['#1bbc9b', '#7BAABE', 'whitesmoke', '#ccddff'],
-            autoScrolling: true,
-            responsiveWidth: 0, //픽셀로 정의된 폭 아래에 정상 스크롤(autoScrolling:false)을 씁니다.
-            credits: {
-                enabled: false
-                // default {enabled: true, label: 'Made with fullpage.js', position: 'right'}
-            }
-        });
-    </script>
+    <script src="../javascript/all_time.js"></script>
 </body>
 
 </html>

@@ -65,7 +65,7 @@
 /* 경복궁 */
 .gyeongbok__text > p {
     color: white;
-    font-size: 1.15em;
+    font-size: 1.2em;
     letter-spacing: 0.1rem;
     line-height: 150%;
     font-family: 'Gowun Batang', serif;
@@ -78,6 +78,46 @@
 }
 
 .gyeongbok__text > p > span {
+    font-size: 2.2em;
+    font-family: 'Gowun Batang', serif;
+}
+
+/* 창경궁 */
+.changgyeong__text > p {
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: 0.1rem;
+    line-height: 160%;
+    font-family: 'Gowun Batang', serif;
+    text-shadow: 2px 2px 2px #111;
+}
+
+.changgyeong__text > p:nth-of-type(2),
+.changgyeong__text > p:nth-of-type(3) {
+    margin: 5px 0;
+}
+
+.changgyeong__text > p > span {
+    font-size: 2.2em;
+    font-family: 'Gowun Batang', serif;
+}
+
+/* 덕수궁 */
+.deoksu__text > p {
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: 0.1rem;
+    line-height: 160%;
+    font-family: 'Gowun Batang', serif;
+    text-shadow: 2px 2px 2px #111;
+}
+
+.deoksu__text > p:nth-of-type(2),
+.deoksu__text > p:nth-of-type(3) {
+    margin: 5px 0;
+}
+
+.deoksu__text > p > span {
     font-size: 2.2em;
     font-family: 'Gowun Batang', serif;
 }
@@ -191,6 +231,7 @@
 }
 
 .sns__tw {
+    display: block;
     width: 48px;
     height: 40px;
     background-image: url(../images/2021\ Twitter\ logo\ -\ blue.png);
@@ -198,6 +239,7 @@
 }
 
 .sns__ig {
+    display: block;
     width: 40px;
     height: 40px;
     background-image: url(../images/Instagram_Glyph_Gradient_RGB.png);
