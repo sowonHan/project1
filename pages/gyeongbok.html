@@ -57,14 +57,12 @@
         <section class="about">
             <div class="background gyeongbok" data-aos="fade-zoom-out" data-aos-easing="linear" data-aos-duration="600">
                 <div class="desc__container">
-                    <div class="desc__text" data-aos="fade-zoom-in" data-aos-offset="300"
+                    <div class="desc__text gyeongbok__text" data-aos="fade-zoom-in" data-aos-offset="300"
                     data-aos-easing="linear" data-aos-delay="800">
-                        <p><span>창덕궁</span>은 조선왕조 제3대 태종 5년(1405) 경복궁이 이궁되면서 지어진 궁궐입니다. 이웃한 창경궁과 서로 다른 별개의 용도로 사용되었으나 두
-                            궁궐이 하나의 궁역을 이루고 있기에, 과거에는 이들을 형제궁궐이라 하여 ‘동궐’이라 불렀습니다.</p>
-                        <p>1610년 광해군이 정궁으로 사용한 후부터 1868년 고종이 경복궁을 중건할 때까지, 창덕궁은 역대 임금들이 거처했던 궁궐입니다. 여러 차례의 화재로 소실과 복구가
-                            반복되었지만 조선의 궁궐 가운데 가장 오랜 기간인 258년 동안, 임금이 정사를 돌보는 법궁의 역할을 지켜왔습니다. 또한 조선의 다른 궁궐과 비교했을 때 창덕궁은 그
-                            원형이 가장 잘 보존되어 있는 궁이기도 합니다.</p>
-                        <p>이러한 창덕궁은 자연과의 조화로운 배치가 탁월하다는 점을 인정받으면서 한국의 궁궐 중 유일하게 유네스코 세계유산으로 등재되어 있습니다.</p>
+                        <p><span>경복궁</span>은 조선왕조 제일의 법궁이자 왕도였던 한양(서울) 도시 계획의 중심입니다. 왕과 관리들의 정무 시설, 왕족의 생활 공간, 휴식을 위한 후원 공간이 모두 조성되어있어 궁 안에 다시 여러 개의 작은 궁들이 복잡하게 모여있습니다.</p>
+                        <p>이렇게 웅장하고 격조 높았던 경복궁은 일제 강점기에 거의 대부분 철거되면서 10%도 채 남지 못하게 되었습니다. 하지만 1990년부터 건물과 시설을 차례차례 복원하기 시작하여, 2022년 현재는 약 3분의 1 가량이 옛 모습을 되찾은 상태입니다.</p>
+                        <p>최근 2021년 11월에는 연못 한가운데 위치한 보물 향원정과 이를 이어주는 나무다리 취향교의 복원 사업이 완료되었습니다. 특히 취향교는 남쪽에서 북쪽으로 옮겨 제자리를 찾고, 평평했던 다리는 1900년대 사진 속 모습처럼 아치형 흰색 구름다리로 복원되었습니다.</p>
+                        <p>혹시 오랫동안 경복궁을 방문하지 않았다면 4년 반만에 다시 모습을 드러낸 향원지를 구경하며 달라진 모습을 눈으로 직접 확인해보세요.</p>
                     </div>
                 </div>
             </div>
@@ -135,14 +133,14 @@
 
         var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
             mapOption = {
-                center: new kakao.maps.LatLng(37.575482395914186, 126.9766913639166), // 지도의 중심좌표
+                center: new kakao.maps.LatLng(37.57762229808923, 126.97689729950368), // 지도의 중심좌표
                 level: 5 // 지도의 확대 레벨
             };
 
         var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 
         // 마커가 표시될 위치입니다 
-        var markerPosition = new kakao.maps.LatLng(37.575482395914186, 126.9766913639166);
+        var markerPosition = new kakao.maps.LatLng(37.57762229808923, 126.97689729950368);
 
         // 마커를 생성합니다
         var marker = new kakao.maps.Marker({

@@ -57,7 +57,7 @@
         <section class="about">
             <div class="background changdeok" data-aos="fade-zoom-out" data-aos-easing="linear" data-aos-duration="600">
                 <div class="desc__container">
-                    <div class="desc__text" data-aos="fade-zoom-in" data-aos-offset="300"
+                    <div class="desc__text changdeok__text" data-aos="fade-zoom-in" data-aos-offset="300"
                     data-aos-easing="linear" data-aos-delay="800">
                         <p><span>창덕궁</span>은 조선왕조 제3대 태종 5년(1405) 경복궁이 이궁되면서 지어진 궁궐입니다. 이웃한 창경궁과 서로 다른 별개의 용도로 사용되었으나 두
                             궁궐이 하나의 궁역을 이루고 있기에, 과거에는 이들을 형제궁궐이라 하여 ‘동궐’이라 불렀습니다.</p>
@@ -135,14 +135,14 @@
 
         var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
             mapOption = {
-                center: new kakao.maps.LatLng(37.58218329580133, 126.99169576642828), // 지도의 중심좌표
+                center: new kakao.maps.LatLng(37.58189497426487, 126.99164485243142), // 지도의 중심좌표
                 level: 5 // 지도의 확대 레벨
             };
 
         var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 
         // 마커가 표시될 위치입니다 
-        var markerPosition = new kakao.maps.LatLng(37.58218329580133, 126.99169576642828);
+        var markerPosition = new kakao.maps.LatLng(37.58189497426487, 126.99164485243142);
 
         // 마커를 생성합니다
         var marker = new kakao.maps.Marker({

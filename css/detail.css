@@ -43,7 +43,8 @@
     padding: 0 10%;
 }
 
-.desc__text > p {
+/* 창덕궁 */
+.changdeok__text > p {
     color: white;
     font-size: 1.2em;
     letter-spacing: 0.1rem;
@@ -52,16 +53,33 @@
     text-shadow: 2px 2px 2px #111;
 }
 
-.desc__text > p:nth-of-type(2) {
+.changdeok__text > p:nth-of-type(2) {
     margin: 5px 0;
+}
+
+.changdeok__text > p > span {
+    font-size: 2.2em;
+    font-family: 'Gowun Batang', serif;
+}
+
+/* 경복궁 */
+.gyeongbok__text > p {
+    color: white;
+    font-size: 1.15em;
+    letter-spacing: 0.1rem;
+    line-height: 150%;
     font-family: 'Gowun Batang', serif;
     text-shadow: 2px 2px 2px #111;
 }
 
-.desc__text > p > span {
+.gyeongbok__text > p:nth-of-type(2),
+.gyeongbok__text > p:nth-of-type(3) {
+    margin: 5px 0;
+}
+
+.gyeongbok__text > p > span {
     font-size: 2.2em;
     font-family: 'Gowun Batang', serif;
-    text-shadow: 2px 2px 2px #111;
 }
 
 /* 최대너비 있는 콘텐츠 */
