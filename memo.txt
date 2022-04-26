@@ -27,12 +27,7 @@ https://developer.twitter.com/en/docs/twitter-for-websites
 
 (cors는 나중에 git 서버에 올리면 해결된다고 하셨다! 야호!)
 
-트위터랑 인스타그램 그냥 트윗 담아가기랑 퍼가기만 눌러도 코드가 생성된다...추가해서 애니메이션 넣을 것까지 고민해보자
 모든 페이지 미디어쿼리 조정 및 추가해서 반응형 페이지 완성
-슬라이드 배경 조금 더 어두운 게 나은지 확인받고 조절하기
-
-메뉴 닫히는 애니메이션은 나중에 시간 넉넉히 들여서 다시 해보기로...
-슬라이드 텍스트에 animate가 첫번째 슬라이드만 작동. 이후는 안 먹혀서 콜백 이용한 js를 검색해서 써봤는데 안된다 좀더 봐야할 듯...
-https://webdesign.tutsplus.com/tutorials/quick-tip-scroll-animations-with-fullpagejs-and-animatecss--cms-25235
-https://codepen.io/tutsplus/pen/dMvJaO
-https://alvarotrigo.com/fullPage/examples/callbacks.html
+유효성 검사
+figma에서 와이어프레임과 화면설계 수정
+요구사항 정의서 작성

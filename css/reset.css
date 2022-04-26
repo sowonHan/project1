@@ -55,11 +55,8 @@ a {
 	color: black;
 }
 
-header, footer, section, nav {
+header, footer, section, nav, article {
 	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	border: 0;
 }
 
 * {

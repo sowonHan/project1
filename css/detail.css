@@ -13,21 +13,25 @@
 .changdeok {
     background-image: url(../images/changdeok.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .changgyeong {
     background-image: url(../images/changgyeong.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .deoksu {
     background-image: url(../images/deoksu.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .gyeongbok {
     background-image: url(../images/gyeongbok_bridge.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .desc__container {
@@ -43,8 +47,9 @@
     padding: 0 10%;
 }
 
-/* 창덕궁 */
-.changdeok__text > p {
+/* 고궁 소개 공통 설정 */
+
+.desc__text > p {
     color: white;
     font-size: 1.2em;
     letter-spacing: 0.1rem;
@@ -53,77 +58,36 @@
     text-shadow: 2px 2px 2px #111;
 }
 
-.changdeok__text > p:nth-of-type(2) {
+.desc__text > p:nth-of-type(2) {
     margin: 5px 0;
 }
 
-.changdeok__text > p > span {
+.desc__text > p > span {
     font-size: 2.2em;
     font-family: 'Gowun Batang', serif;
 }
 
 /* 경복궁 */
+
 .gyeongbok__text > p {
-    color: white;
-    font-size: 1.2em;
-    letter-spacing: 0.1rem;
-    line-height: 150%;
-    font-family: 'Gowun Batang', serif;
-    text-shadow: 2px 2px 2px #111;
+    line-height: 155%;
 }
 
-.gyeongbok__text > p:nth-of-type(2),
 .gyeongbok__text > p:nth-of-type(3) {
     margin: 5px 0;
 }
 
-.gyeongbok__text > p > span {
-    font-size: 2.2em;
-    font-family: 'Gowun Batang', serif;
-}
-
 /* 창경궁 */
-.changgyeong__text > p {
-    color: white;
-    font-size: 1.2em;
-    letter-spacing: 0.1rem;
-    line-height: 160%;
-    font-family: 'Gowun Batang', serif;
-    text-shadow: 2px 2px 2px #111;
-}
-
-.changgyeong__text > p:nth-of-type(2),
 .changgyeong__text > p:nth-of-type(3) {
     margin: 5px 0;
 }
 
-.changgyeong__text > p > span {
-    font-size: 2.2em;
-    font-family: 'Gowun Batang', serif;
-}
-
 /* 덕수궁 */
-.deoksu__text > p {
-    color: white;
-    font-size: 1.2em;
-    letter-spacing: 0.1rem;
-    line-height: 160%;
-    font-family: 'Gowun Batang', serif;
-    text-shadow: 2px 2px 2px #111;
-}
-
-.deoksu__text > p:nth-of-type(2),
 .deoksu__text > p:nth-of-type(3) {
     margin: 5px 0;
 }
 
-.deoksu__text > p > span {
-    font-size: 2.2em;
-    font-family: 'Gowun Batang', serif;
-}
-
 /* 최대너비 있는 콘텐츠 */
-
 .wrap__maxwidth-2 {
     max-width: 1200px;
     margin: 0 auto;
@@ -203,7 +167,6 @@
 }
 
 #map {
-    max-width: 600px;
     height: 500px;
 }
 
@@ -222,34 +185,222 @@
     margin-bottom: 15px;
 }
 
-.sns {
-    width: 150px;
-    height: 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.info__mobile1 {
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 700;
+    font-size: 150%;
+    margin-bottom: 10px;
+    display: none;
 }
 
-.sns__tw {
-    display: block;
-    width: 48px;
-    height: 40px;
-    background-image: url(../images/2021\ Twitter\ logo\ -\ blue.png);
-    background-size: cover;
+.info__mobile2 {
+    font-family: 'Noto Serif KR', serif;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 150%;
+    display: none;
 }
 
-.sns__ig {
-    display: block;
-    width: 40px;
-    height: 40px;
-    background-image: url(../images/Instagram_Glyph_Gradient_RGB.png);
-    background-size: cover;
-}
 
 /* 미디어 쿼리 */
 
-@media all and (max-width: 1400px) {
-    .background {
-        height: calc(100% - 65px);
+@media all and (max-width: 359px) {
+    .location {
+        flex-direction: column;
     }
+    
+    .location__content {
+        width: 100%;
+        height: 350px;
+    }
+
+    .location__text > p:nth-of-type(1) {
+        margin-bottom: 30px;
+        font-size: 0.8em;
+    }
+    
+    .location__text > p:nth-of-type(1) > span,
+    .location__text > p:nth-of-type(2) > span {
+        font-size: 0.9em;
+        margin-right: 15px;
+    }
+    
+    .location__text > p:nth-of-type(2) {
+        margin-bottom: 30px;
+        font-size: 0.8em;
+    }
+    
+    .location__text > p:nth-of-type(3) {
+        margin-bottom: 20px;
+        font-size: 0.8em;
+    }
+    
+    .location__text > p:nth-of-type(4) {
+        margin-bottom: 15px;
+        font-size: 0.8em;
+    }
+    
+    .location__text > p:nth-of-type(5) {
+        margin-bottom: 40px;
+        font-size: 0.8em;
+    }
+    
+    .location__text > p:nth-of-type(6) {
+        font-size: 10px;
+    }
+
+    .map-container {
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    #map {
+        height: 350px;
+    }
+
+    .info >.btn-container {
+        width: 200px;
+    }
+
+    .info .link-wrapper > a {
+        width: 200px;
+        font-size: 15px;
+    }
+
+    .info .link-wrapper > a:hover {
+        width: 160px;
+    }
+
+    .info .link-wrapper > a:hover+.icon {
+        right: -30%;
+    }
+
+    .info > h1 {
+        display: none;
+    }
+
+    .info__mobile1, .info__mobile2 {
+        display: block;
+        font-size: 120%;
+    }
+}
+
+@media all and (min-width: 360px) and (max-width: 479px) {
+    .location {
+        flex-direction: column;
+    }
+    
+    .location__content {
+        width: 100%;
+        height: 400px;
+    }
+
+    .location__text > p:nth-of-type(1) {
+        margin-bottom: 30px;
+        font-size: 1em;
+    }
+    
+    .location__text > p:nth-of-type(1) > span,
+    .location__text > p:nth-of-type(2) > span {
+        font-size: 1em;
+        margin-right: 15px;
+    }
+    
+    .location__text > p:nth-of-type(2) {
+        margin-bottom: 30px;
+        font-size: 1em;
+    }
+    
+    .location__text > p:nth-of-type(3) {
+        margin-bottom: 20px;
+        font-size: 1em;
+    }
+    
+    .location__text > p:nth-of-type(4) {
+        margin-bottom: 15px;
+        font-size: 1em;
+    }
+    
+    .location__text > p:nth-of-type(5) {
+        margin-bottom: 40px;
+        font-size: 1em;
+    }
+    
+    .location__text > p:nth-of-type(6) {
+        font-size: 0.9em;
+    }
+
+    .map-container {
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    #map {
+        height: 400px;
+    }
+
+    .info > h1 {
+        display: none;
+    }
+
+    .info__mobile1, .info__mobile2 {
+        display: block;
+        font-size: 140%;
+    }
+}
+
+@media all and (max-width: 602px) {
+
+}
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+    .location {
+        flex-direction: column;
+    }
+    
+    .location__content {
+        width: 100%;
+        height: 400px;
+    }
+
+    .map-container {
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    #map {
+        height: 400px;
+    }
+
+    .info > h1 {
+        display: none;
+    }
+
+    .info__mobile1, .info__mobile2 {
+        display: block;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 900px) {
+    .location {
+        flex-direction: column;
+    }
+
+    .location__content {
+        width: 60%;
+        height: 400px;
+    }
+
+    .map-container {
+        margin-top: 20px;
+        width: 60%;
+    }
+    
+    #map {
+        height: 400px;
+    }
+}
+
+@media all and (max-width: 1200px) {
+
 }

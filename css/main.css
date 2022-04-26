@@ -4,7 +4,6 @@
 
 .slider__container {
     max-width: 1903px;
-    height: 600px;
     background-image: url(../images/slide_background.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -150,14 +149,16 @@
 /* 달력 */
 
 .calendar__container {
-    height: 740px;
+    /* height: 740px; */
     /* 달력 크기는 900 x 736.14 */
     padding: 80px 0 40px 0;
+    margin: 0;
 }
 
 /* 알림판 */
 
 .notice__container {
+    margin: 0 auto;
     height: 250px;
     border: 10px solid #e16350;
     box-sizing: border-box;
@@ -177,7 +178,7 @@
 }
 
 .comming-soon > h1 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 2rem;
     font-weight: 900;
     font-family: 'Noto Serif KR', serif;
@@ -187,10 +188,7 @@
     font-size: 1.5rem;
     font-weight: 700;
     font-family: 'Noto Serif KR', serif;
-}
-
-.comming-soon > p {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 /* 상설 행사 안내 */
@@ -228,26 +226,144 @@
     font-family: 'Noto Serif KR', serif;
 }
 
-/* 상설행사 버튼 */
+/* 문화재청 sns */
 
-.all-time__btn {
-    background-color: #dcccac;
+.admin {
+    margin: 120px auto 0;
+}
+
+.admin__container1 {
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 680px;
+    border: 10px solid #e16350;
+    box-sizing: border-box;
+}
+
+.admin__container2 {
+    margin: 0 auto;
+    max-width: 1180px;
+    box-sizing: border-box;
+    border: 10px solid #5dc19b;
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin__container2 > h4 {
+    text-align: center;
+    font-size: 1.1em;
+    font-family: 'Noto Serif KR', serif;
+    margin: 25px 0 10px;
+    font-weight: 500;
+}
+
+.admin__container2 > h1 {
+    text-align: center;
+    font-size: 1.6em;
+    font-family: 'Noto Serif KR', serif;
+    margin-bottom: 20px;
+}
+
+.admin__tablet > .sns {
+    width: 220px;
+    margin: 0 auto;
 }
 
 
 /* 미디어 쿼리 */
 
-@media all and (max-width: 329px) {
-
+@media all and (max-width: 339px) {
     /* 달력 */
     .fc-header-toolbar>.fc-toolbar-chunk:first-of-type>button {
         display: none;
     }
+}
 
-    /* .fc-header-toolbar > .fc-toolbar-chunk:last-of-type > .fc-button-group > button:first-child {
+@media all and (max-width: 479px) {
+    .slider__content {
+        max-height: 280px;
+    }
+
+    .slide__one, .slide__two, .slide__three, .slide__four, .slide__five, .slide__six, .slide__seven, .slide__eight, .slide__nine {
+        background-size: contain;
+    } 
+
+    .all-time__content > p:first-of-type {
+        font-size: 0.9rem;
+    }
+    
+    .all-time__content > p:last-of-type {
+        font-size: 0.9rem;
+    }
+
+    .all-time__content > h6 {
+        font-size: 1em;
+    }
+
+    .admin__container2 > h4 {
+        font-size: 0.8em;
+    }
+    
+    .admin__container2 > h1 {
+        font-size: 1.2em;
+    }
+    
+    .admin__tablet > .sns {
+        width: 170px;
+        margin: 0 auto;
+    }
+
+    .comming-soon > h1 {
+        font-size: 1.6rem;
+    }
+    
+    .comming-soon > p {
+        font-size: 1.1rem;
+    }
+
+    .all-time__content >.btn-container {
+        width: 200px;
+    }
+
+    .all-time__content .link-wrapper > a {
+        width: 200px;
+        font-size: 15px;
+    }
+
+    .all-time__content .link-wrapper > a:hover {
+        width: 160px;
+    }
+
+    .all-time__content .link-wrapper > a:hover+.icon {
+        right: -30%;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 600px) {
+    .all-time__content > p:first-of-type {
+        font-size: 1.3rem;
+    }
+    
+    .all-time__content > p:last-of-type {
+        font-size: 1.3rem;
+    }
+}
+
+@media all and (max-width: 729px) {
+    .admin__container2 .admin__tw {
         display: none;
-        달력 버튼 안 보이게 하는 설정
-    } */
+    }
+
+    .admin__container1 {
+        height: 300px;
+    }
+    
+    .admin__container2 {
+        height: 280px;
+    }
 }
 
 @media all and (max-width: 767px) {
@@ -276,14 +392,21 @@
     .fc-event-title {
         font-size: 60%;
     }
-
-
 }
 
 @media all and (max-width: 889px) {
-
     /* 달력 배경이벤트 텍스트 */
     .fc-bg-event .fc-event-title {
         display: none;
+    }
+}
+
+@media all and (max-width: 900px) {
+    .notice__container {
+        width: 90%;
+    }
+
+    .admin__container1 {
+        width: 90%;
     }
 }

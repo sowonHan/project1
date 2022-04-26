@@ -35,33 +35,7 @@ function getDirection() {
 /* 달력 */
 
 // resize될 때 화면 바꾸기 시도 중인데 안 되는군
-// (function() {
-//     var throttle = function(type, name, obj) {
-//         obj = obj || window;
-//         var running = false;
-//         var func = function() {
-//             if (running) { return; }
-//             running = true;
-//             requestAnimationFrame(function() {
-//                 obj.dispatchEvent(new CustomEvent(name));
-//                 running = false;
-//             });
-//         };
-//         obj.addEventListener(type, func);
-//     };
 
-//     throttle("resize", "optimizedResize");
-// })();
-
-// let getView = () => {
-//     window.addEventListener('optimizedResize', () => {
-//         var intFrameWidth = window.innerWidth;
-
-//         const view = intFrameWidth <= 329 ? 'listMonth' : 'dayGridMonth';
-
-//         return view;
-//     });
-// }
 
 document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
@@ -92,8 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
         //     }
         // ],
         events: '../json/events.json',
-        // live server로는 잘 되는데 chrome 브라우저로 여니까 안 돼^.T...
-        
+
         // 이벤트 클릭했을 때 새 탭에서 열리게 하는 기능
         eventClick: function (info) {
             info.jsEvent.preventDefault(); // don't let the browser navigate
@@ -105,7 +78,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     calendar.render();
-    calendar.changeView(getView());
 });
 
 /* 스크롤 애니메이션 */

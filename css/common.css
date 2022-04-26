@@ -26,7 +26,7 @@
 
 .wrap {
     margin-top: 65px;
-    margin-bottom: 300px;
+    margin-bottom: 250px;
 }
 
 /* 웹 메뉴 */
@@ -97,6 +97,7 @@
     height: 65px;
     background-color: transparent;
     display: none;
+    width: 100%;
 }
 
 .shadow {
@@ -273,6 +274,32 @@
     right: -25%;
 }
 
+/* 공용 SNS 아이콘 설정 */
+
+.sns {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sns__tw {
+    display: block;
+    width: 48px;
+    height: 40px;
+    background-image: url(../images/2021\ Twitter\ logo\ -\ blue.png);
+    background-size: cover;
+}
+
+.sns__ig {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/Instagram_Glyph_Gradient_RGB.png);
+    background-size: cover;
+}
+
 /* 푸터 */
 
 .footer__container {
@@ -290,7 +317,7 @@
     bottom: 10px;
 }
 
-.footer__container > div:nth-of-type(2) {
+.footer__container > div:last-of-type {
     right: 10px;
     bottom: 10px;
 }
@@ -303,6 +330,21 @@
 
 /* 미디어 쿼리 */
 
+@media all and (max-width: 699px) {
+    .footer__container {
+        position: static;
+    }
+    
+    .footer__container > div {
+        position: static;
+        padding-left: 5px;
+    }
+    
+    .footer__container > div:last-of-type {
+        margin-bottom: 5px;
+    }
+}
+
 @media all and (max-width: 767px) {
     .web-menu {
         display: none;
@@ -310,19 +352,5 @@
 
     .header > .trigger-container {
         display: block;
-    }
-}
-
-@media all and (max-width: 939px) {
-    .footer__container {
-        position: static;
-    }
-    
-    .footer__container > div {
-        position: static;
-    }
-    
-    .footer__container > div:last-of-type {
-        margin-bottom: 5px;
     }
 }
