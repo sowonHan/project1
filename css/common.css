@@ -343,6 +343,15 @@
     .footer__container > div:last-of-type {
         margin-bottom: 5px;
     }
+
+    .footer-fix div {
+        font-size: 80%;
+    }
+
+    .footer-fix > .footer__container img {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 @media all and (max-width: 767px) {

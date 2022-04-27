@@ -34,7 +34,7 @@
     background-position: center;
 }
 
-.desc__container {
+.about__container {
     width: 800px;
     height: 600px;
     background-color: rgb(0, 0, 0, 0.6);
@@ -43,13 +43,13 @@
     align-items: center;
 }
 
-.desc__text {
+.about__text {
     padding: 0 10%;
 }
 
 /* 고궁 소개 공통 설정 */
 
-.desc__text > p {
+.about__text > p {
     color: white;
     font-size: 1.2em;
     letter-spacing: 0.1rem;
@@ -58,11 +58,11 @@
     text-shadow: 2px 2px 2px #111;
 }
 
-.desc__text > p:nth-of-type(2) {
+.about__text > p:nth-of-type(2) {
     margin: 5px 0;
 }
 
-.desc__text > p > span {
+.about__text > p > span {
     font-size: 2.2em;
     font-family: 'Gowun Batang', serif;
 }
@@ -204,54 +204,61 @@
 
 /* 미디어 쿼리 */
 
-@media all and (max-width: 359px) {
-    .location {
-        flex-direction: column;
+/* 고궁 소개 */
+@media all and (max-width: 459px) {
+    .about__text > p {
+        font-size: 0.8em;
     }
-    
+
+    .about__text > p > span {
+        font-size: 1.7em;
+    }
+}
+
+@media all and (min-width: 460px) and (max-width: 660px) {
+    .about__text > p {
+        font-size: 1em;
+    }
+
+    .about__text > p > span {
+        font-size: 2em;
+    }
+}
+
+/* 나머지 */
+@media all and (max-width: 359px) {
     .location__content {
         width: 100%;
         height: 350px;
     }
 
     .location__text > p:nth-of-type(1) {
-        margin-bottom: 30px;
         font-size: 0.8em;
     }
     
     .location__text > p:nth-of-type(1) > span,
     .location__text > p:nth-of-type(2) > span {
         font-size: 0.9em;
-        margin-right: 15px;
     }
     
     .location__text > p:nth-of-type(2) {
-        margin-bottom: 30px;
         font-size: 0.8em;
     }
     
     .location__text > p:nth-of-type(3) {
-        margin-bottom: 20px;
         font-size: 0.8em;
     }
     
     .location__text > p:nth-of-type(4) {
-        margin-bottom: 15px;
         font-size: 0.8em;
     }
     
     .location__text > p:nth-of-type(5) {
-        margin-bottom: 40px;
         font-size: 0.8em;
     }
     
     .location__text > p:nth-of-type(6) {
         font-size: 10px;
-    }
-
-    .map-container {
-        margin-top: 20px;
-        width: 90%;
     }
 
     #map {
@@ -275,54 +282,34 @@
         right: -30%;
     }
 
-    .info > h1 {
-        display: none;
-    }
-
     .info__mobile1, .info__mobile2 {
-        display: block;
         font-size: 120%;
     }
 }
 
 @media all and (min-width: 360px) and (max-width: 479px) {
-    .location {
-        flex-direction: column;
-    }
-    
-    .location__content {
-        width: 100%;
-        height: 400px;
-    }
-
     .location__text > p:nth-of-type(1) {
-        margin-bottom: 30px;
         font-size: 1em;
     }
     
     .location__text > p:nth-of-type(1) > span,
     .location__text > p:nth-of-type(2) > span {
         font-size: 1em;
-        margin-right: 15px;
     }
     
     .location__text > p:nth-of-type(2) {
-        margin-bottom: 30px;
         font-size: 1em;
     }
     
     .location__text > p:nth-of-type(3) {
-        margin-bottom: 20px;
         font-size: 1em;
     }
     
     .location__text > p:nth-of-type(4) {
-        margin-bottom: 15px;
         font-size: 1em;
     }
     
     .location__text > p:nth-of-type(5) {
-        margin-bottom: 40px;
         font-size: 1em;
     }
     
@@ -330,46 +317,20 @@
         font-size: 0.9em;
     }
 
-    .map-container {
-        margin-top: 20px;
-        width: 90%;
-    }
-
-    #map {
-        height: 400px;
-    }
-
-    .info > h1 {
-        display: none;
-    }
-
     .info__mobile1, .info__mobile2 {
-        display: block;
         font-size: 140%;
     }
 }
 
-@media all and (max-width: 602px) {
-
-}
-
-@media all and (min-width: 480px) and (max-width: 767px) {
-    .location {
-        flex-direction: column;
-    }
-    
+@media all and (min-width: 360px) and (max-width:767px) {
     .location__content {
         width: 100%;
-        height: 400px;
     }
+}
 
+@media all and (max-width: 767px) {
     .map-container {
-        margin-top: 20px;
         width: 90%;
-    }
-
-    #map {
-        height: 400px;
     }
 
     .info > h1 {
@@ -382,18 +343,18 @@
 }
 
 @media all and (min-width: 768px) and (max-width: 900px) {
-    .location {
-        flex-direction: column;
-    }
-
     .location__content {
         width: 60%;
-        height: 400px;
     }
 
     .map-container {
-        margin-top: 20px;
         width: 60%;
+    }
+}
+
+@media all and (min-width: 360px) and (max-width:900px) {
+    .location__content {
+        height: 400px;
     }
     
     #map {
@@ -401,6 +362,12 @@
     }
 }
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 900px) {
+    .location {
+        flex-direction: column-reverse;
+    }
 
+    .map-container {
+        margin-bottom: 20px;
+    }
 }

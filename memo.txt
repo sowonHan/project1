@@ -27,7 +27,6 @@ https://developer.twitter.com/en/docs/twitter-for-websites
 
 (cors는 나중에 git 서버에 올리면 해결된다고 하셨다! 야호!)
 
-모든 페이지 미디어쿼리 조정 및 추가해서 반응형 페이지 완성
 유효성 검사
 figma에서 와이어프레임과 화면설계 수정
 요구사항 정의서 작성
