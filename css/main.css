@@ -52,6 +52,12 @@
     margin-right: auto;
 }
 
+.mySwiper .swiper-button-next, .mySwiper .swiper-button-prev {
+    background-color: rgb(80, 78, 72, 0.5);
+    color: white;
+    padding: 10px;
+}
+
 .slide__one {
     background-image: url(../images/slide_main.png);
     background-size: cover;

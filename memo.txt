@@ -21,6 +21,7 @@ https://developer.twitter.com/en/docs/twitter-for-websites
 기와진회색 #504e48
 하얀색
 은행노란색 #f6b65a
+lightgoldenrodyellow
 
 
 ======해야할 일 순서=======
