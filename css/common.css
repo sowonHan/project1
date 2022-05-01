@@ -285,7 +285,7 @@
 }
 
 .sns__tw {
-    display: block;
+    cursor: pointer;
     width: 48px;
     height: 40px;
     background-image: url(../images/2021\ Twitter\ logo\ -\ blue.png);
@@ -293,7 +293,7 @@
 }
 
 .sns__ig {
-    display: block;
+    cursor: pointer;
     width: 40px;
     height: 40px;
     background-image: url(../images/Instagram_Glyph_Gradient_RGB.png);

@@ -66,7 +66,7 @@
 }
 
 .slide__two {
-    display: block;
+    cursor: pointer;
     width: 100%;
     height: 100%;
     background-image: url(../images/slide_spring.png);
@@ -76,7 +76,7 @@
 }
 
 .slide__three {
-    display: block;
+    cursor: pointer;
     width: 100%;
     height: 100%;
     background-image: url(../images/slide_moran.png);
@@ -86,7 +86,7 @@
 }
 
 .slide__four {
-    display: block;
+    cursor: pointer;
     width: 100%;
     height: 100%;
     background-image: url(../images/slide_gyeong_night.png);
@@ -96,7 +96,7 @@
 }
 
 .slide__five {
-    display: block;
+    cursor: pointer;
     width: 100%;
     height: 100%;
     background-image: url(../images/slide_dalbit.png);
@@ -106,7 +106,7 @@
 }
 
 .slide__six {
-    display: block;
+    cursor: pointer;
     width: 100%;
     height: 100%;
     background-image: url(../images/slide_saeng.png);
@@ -116,7 +116,7 @@
 }
 
 .slide__seven {
-    display: block;
+    cursor: pointer;
     width: 100%;
     height: 100%;
     background-image: url(../images/slide_hoeru.png);
@@ -126,7 +126,7 @@
 }
 
 .slide__eight {
-    display: block;
+    cursor: pointer;
     width: 100%;
     height: 100%;
     background-image: url(../images/slide_tree.png);
@@ -136,7 +136,7 @@
 }
 
 .slide__nine {
-    display: block;
+    cursor: pointer;
     width: 100%;
     height: 100%;
     background-image: url(../images/slide_festival.png);

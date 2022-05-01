@@ -48,3 +48,11 @@ $(function() {
         }
     });
 });
+
+
+/* div에 링크 걸기 */
+
+const openInNewTab = (url) => {
+    let win = window.open(url, '_blank');
+    win.focus();
+}
