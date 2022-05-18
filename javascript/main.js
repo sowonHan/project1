@@ -1105,6 +1105,7 @@ const e = [
     start: "2022-05-21",
     end: "2022-05-23",
     url: "https://twitter.com/DeokSuGungLoveU/status/1526784436632580096?s=20&t=ITwSFmMUeY-xs4ZKfbyHhQ",
+    color: "##038594",
   },
 ];
 
