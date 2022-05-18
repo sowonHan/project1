@@ -1100,6 +1100,12 @@ const e = [
     color: "blue",
     url: "http://deoksugung.go.kr/board/view?no=5169&board_id=NOT",
   },
+  {
+    title: "고궁음악회 덕수궁 풍류대장",
+    start: "2022-05-21",
+    end: "2022-05-23",
+    url: "https://twitter.com/DeokSuGungLoveU/status/1526784436632580096?s=20&t=ITwSFmMUeY-xs4ZKfbyHhQ",
+  },
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
