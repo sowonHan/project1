@@ -1123,7 +1123,7 @@ document.addEventListener("DOMContentLoaded", function () {
     dayMaxEvents: true, // allow "more" link when too many events,
     expandRows: true,
     initialView: "dayGridMonth",
-    initialDate: "2022-03-31",
+    initialDate: "2022-04-01",
     headerToolbar: {
       left: "prev,next today",
       center: "title",
