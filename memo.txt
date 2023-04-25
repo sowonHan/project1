@@ -1,7 +1,3 @@
-https://animate.style/
-
-스크롤 https://michalsnik.github.io/aos/
-
 https://developer.twitter.com/en/docs/twitter-for-websites
 
 
@@ -23,7 +19,4 @@ https://developer.twitter.com/en/docs/twitter-for-websites
 은행노란색 #f6b65a
 lightgoldenrodyellow
 #333
-
-
-(cors는 나중에 git 서버에 올리면 해결된다고 하셨다! 야호!)
 
