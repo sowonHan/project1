@@ -26,15 +26,12 @@ var swiper = new Swiper(".mySwiper", {
 
 // 767px 이하에서는 슬라이드 버튼 방향 바뀌게 하는 기능
 function getDirection() {
-  var windowWidth = window.innerWidth;
   var direction = window.innerWidth <= 767 ? "vertical" : "horizontal";
 
   return direction;
 }
 
 /* 달력 */
-
-// resize될 때 화면 바꾸기 시도 중인데 안 되는군
 
 const e = [
   {
@@ -1127,7 +1124,7 @@ document.addEventListener("DOMContentLoaded", function () {
     headerToolbar: {
       left: "prev,next today",
       center: "title",
-      right: "dayGridMonth,listMonth", //행사목록 월별로 바꾸려면 listMonth로 고치면 됨
+      right: "dayGridMonth,listMonth",
     },
     locale: "ko", // 한국어 설정
     events: e,
