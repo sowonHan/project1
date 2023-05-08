@@ -3,7 +3,7 @@
 
 jQuery 기반의 고궁 행사 안내 사이트
 
-> [배포링크](sowonhan.github.io/walking_palace/)
+> [배포링크](https://sowonhan.github.io/walking_palace/)
 
 ## 🐲 프로젝트 소개
 
