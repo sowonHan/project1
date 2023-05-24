@@ -37,6 +37,11 @@ jQuery 기반의 고궁 행사 안내 사이트
   - Animate.css
   - Font Awesome
 
+`디자인`
+- Figma
+  - [프로토타입](https://www.figma.com/file/O3UILD43EN71akDOHvigZz/Walking-Palace?type=design&t=apdwRn1l4K5w55t0-1)
+  - [와이어프레임](https://www.figma.com/file/JH8CS83vniO3g93LiVKhVY/Walking-Palace_%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84?type=design&t=apdwRn1l4K5w55t0-1)
+
 ## 🪁 소스
 
 `OPEN API`
