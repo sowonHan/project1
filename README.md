@@ -1,7 +1,7 @@
 # 🌺 고궁 산책
 ![대표](https://user-images.githubusercontent.com/100406001/236392408-f57cf4d7-4cae-4a8e-ae54-3a3e1389ffbe.png)
 
-jQuery 기반의 고궁 행사 안내 사이트
+jQuery 기반의 고궁 행사 일정 체크 및 안내 사이트
 
 > [배포링크](https://sowonhan.github.io/walking_palace/)
 
