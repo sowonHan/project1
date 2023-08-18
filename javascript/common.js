@@ -8,7 +8,6 @@ $(function () {
       $(".mobile-menu__list").show(600);
       $(".mobile-menu").show().animate({ width: "100%" }, 600);
       $(".trigger-container").addClass("shadow");
-      //   $("header").removeClass("transparent");
     } else {
       $(".mobile-menu__list").hide();
       $(".mobile-menu").animate({ width: 0 }, 600);
